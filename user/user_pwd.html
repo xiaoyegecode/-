@@ -12,25 +12,25 @@
   <div class="layui-card">
     <div class="layui-card-header">修改密码</div>
     <div class="layui-card-body">
-      <form class="layui-form" action="">
+      <form class="layui-form" action="" lay-filter="formPassword">
         <div class="layui-form-item">
           <label class="layui-form-label">原密码</label>
           <div class="layui-input-block">
-            <input type="password" name="oldPwd" required lay-verify="required" placeholder="请输入原密码" autocomplete="off"
+            <input type="password" name="oldPwd" required lay-verify="required|pwd" placeholder="请输入原密码" autocomplete="off"
               class="layui-input" />
           </div>
         </div>
         <div class="layui-form-item">
           <label class="layui-form-label">新密码</label>
           <div class="layui-input-block">
-            <input type="password" name="newPwd" required lay-verify="required" placeholder="请输入新密码" autocomplete="off"
+            <input type="password" name="newPwd" required lay-verify="required|pwd|samePwd" placeholder="请输入新密码" autocomplete="off"
               class="layui-input" />
           </div>
         </div>
         <div class="layui-form-item">
           <label class="layui-form-label">请确认密码</label>
           <div class="layui-input-block">
-            <input type="password" name="rePwd" required lay-verify="required" placeholder="请再次确认密码" autocomplete="off"
+            <input type="password" name="rePwd" required lay-verify="required|pwd|rePwd" placeholder="请再次确认密码" autocomplete="off"
               class="layui-input" />
           </div>
         </div>
